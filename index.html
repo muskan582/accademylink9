@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #111;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 15px;
+    }
+
+    h1 {
+      color: #0077ff;
+      font-size: 22px;
+      margin-top: 35px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 15px;
+      margin: 8px 0;
+    }
+
+    .timer {
+      font-size: 18px;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ff6600;
+    }
+
+    .profile {
+      width: 170px;
+      height: 170px;
+      margin: 20px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #0077ff;
+      box-shadow: 0 0 18px rgba(0, 119, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .view-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: linear-gradient(45deg, #0077ff, #00c6ff);
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .view-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 119, 255, 0.4);
+    }
+
+    h2 {
+      color: #0077ff;
+      margin-top: 8px;
+      font-size: 18px;
+    }
+
+    .footer {
+      font-size: 13px;
+      margin-top: 15px;
+      opacity: 0.8;
+    }
+
+    .credit {
+      text-align: center;
+      font-size: 14px;
+      color: #0077ff;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .credit a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+
+    .credit a:hover {
+      text-decoration: underline;
+    }
+
+    .disclaimer {
+      background: #f7f7f7;
+      color: #555;
+      font-size: 12px;
+      text-align: center;
+      padding: 8px 10px 6px 10px;
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+      line-height: 1.4;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .disclaimer strong {
+      color: #222;
+    }
+
+    .footer-links {
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 0 10px 0;
+      background: #f7f7f7;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .footer-links a {
+      color: #0077ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 18px; }
+      p { font-size: 14px; }
+      .profile { width: 120px; height: 120px; }
+      .view-btn { padding: 10px 22px; font-size: 14px; }
+      h2 { font-size: 16px; }
+
+      .credit { font-size: 13px; margin-top: 6px; }
+
+      .disclaimer {
+        font-size: 11px;
+        padding: 6px 8px;
+        margin-top: -40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <h1>حافظ شعیب خان</h1>
+    <p>💰Dominate the Market. Rule the Game 🎯</p>
+
+    <div class="timer">
+      <span id="countdown">5</span> SECONDS
+    </div>
+
+    <div class="profile">
+      <img src="https://hopeforchange.fun/image/Screenshot 2025-11-07 153137.png" alt="Trading Logo"> 
+    </div>
+
+    <h2>90,000 Subscribers</h2>
+    <p>✅ Turning Market Moves into Opportunities</p>
+
+    <a href="https://telegram.me/+VA3umrUpuoQ3Zjhl" class="view-btn">JOIN NOW FOR FREE</a>
+
+    <p class="footer">💎 Precision. Power. Passion 🌍 - Join Now</p>
+
+    <p class="credit">
+      ads managed by <a href="https://t.me/+TRlJl628l-FkMWE9" target="_blank">@Nexgroww_agency</a>
+    </p>
+
+  </main>
+
+  <section class="disclaimer">
+    <strong>Disclaimer:</strong> All trading and game-related activities involve risk. 
+    حافظ شعیب خان provides information for educational and entertainment purposes only.
+  </section>
+
+  <div class="footer-links">
+    <a href="https://telegram.me/+VA3umrUpuoQ3Zjhl">Privacy Policy</a>
+    <span>|</span>
+    <a href="https://telegram.me/+VA3umrUpuoQ3Zjhl">Contact Us</a>
+  </div>
+
+  <script>
+    let countdown = 5;
+    function updateTimer() {
+      document.getElementById("countdown").innerText = countdown;
+      countdown--;
+    }
+  </script>
+
+</body>
+</html>
