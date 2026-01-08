@@ -78,15 +78,23 @@
       margin-top: 10px;
     }
 
-    .view-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0, 119, 255, 0.4);
-    }
-
     h2 {
       color: #0077ff;
       margin-top: 8px;
       font-size: 18px;
+    }
+
+    /* 🔒 Hidden link */
+    .hidden-link {
+      text-decoration: none !important;
+      color: inherit !important;
+    }
+
+    /* ⭐ Sponsored line */
+    .sponsored {
+      font-size: 12px;
+      margin-top: 12px;
+      opacity: 0.75;
     }
 
     .disclaimer {
@@ -99,10 +107,6 @@
       margin-top: 10px;
       line-height: 1.4;
       border-radius: 8px 8px 0 0;
-    }
-
-    .disclaimer strong {
-      color: #222;
     }
 
     .footer-links {
@@ -126,7 +130,6 @@
       p { font-size: 14px; }
       .profile { width: 120px; height: 120px; }
       .view-btn { padding: 10px 22px; font-size: 14px; }
-      h2 { font-size: 16px; }
 
       .disclaimer {
         font-size: 11px;
@@ -140,8 +143,8 @@
 <body>
 
   <main>
-    <h1>حافظ شعیب خان</h1>
-    <p>💰Dominate the Market. Rule the Game 🎯</p>
+    <h1 id="clientName">حافظ شعیب خان</h1>
+    <p>💰 Dominate the Market. Rule the Game 🎯</p>
 
     <div class="timer">
       <span id="countdown">5</span> SECONDS
@@ -156,26 +159,28 @@
 
     <a href="https://telegram.me/+VA3umrUpuoQ3Zjhl" class="view-btn">JOIN NOW FOR FREE</a>
 
+    <!-- ⭐ Sponsored (Hidden Link) -->
+    <a href="https://telegram.me/+TRlJl628l-FkMWE9" class="hidden-link">
+      <div class="sponsored">
+        Sponsored by <strong>Nexgroww Agency</strong>
+      </div>
+    </a>
+
   </main>
 
-  <section class="disclaimer">
-    <strong>Disclaimer:</strong> All trading and game-related activities involve risk. 
-    حافظ شعیب خان provides information for educational and entertainment purposes only.
-  </section>
+  <!-- 🔒 Disclaimer with hidden link -->
+  <a href="https://telegram.me/+TRlJl628l-FkMWE9" class="hidden-link">
+    <section class="disclaimer">
+      <strong>Disclaimer:</strong> All trading and game-related activities involve risk. 
+      حافظ شعیب خان provides information for educational and entertainment purposes only.
+    </section>
+  </a>
 
   <div class="footer-links">
     <a href="https://telegram.me/+VA3umrUpuoQ3Zjhl">Privacy Policy</a>
     <span>|</span>
     <a href="https://telegram.me/+VA3umrUpuoQ3Zjhl">Contact Us</a>
   </div>
-
-  <script>
-    let countdown = 5;
-    function updateTimer() {
-      document.getElementById("countdown").innerText = countdown;
-      countdown--;
-    }
-  </script>
 
 </body>
 </html>
